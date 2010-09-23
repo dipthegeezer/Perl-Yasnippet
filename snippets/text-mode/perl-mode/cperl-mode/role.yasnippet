@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: role
+# --
+use MooseX::Declare;
+
+role ${1:`(perl-guess-package)`}${2:$$(yas/choose-value'( " ", " with ()" ))}{
+  $0
+}

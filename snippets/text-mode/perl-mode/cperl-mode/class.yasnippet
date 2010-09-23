@@ -1,0 +1,8 @@
+# name: class
+# -*- mode: snippet -*-
+# --
+use MooseX::Declare;
+
+class ${1:`(perl-guess-package)`}${2:$$(yas/choose-value'( " ", " extends ", " with () ", " is mutable ", " is dirty " ))}{
+      $0
+}

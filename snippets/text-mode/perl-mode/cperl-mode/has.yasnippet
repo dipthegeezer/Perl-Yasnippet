@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: has
+# --
+
+has ${1:attribute} => (
+    isa => $2,
+    is  => $3,
+    required => $4,
+    default => $5,
+    handles => $6,
+);
