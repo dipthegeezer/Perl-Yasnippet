@@ -1,11 +1,23 @@
 # -*- mode: snippet -*-
 # name: has
 # --
-
 has ${1:attribute} => (
-    isa => $2,
-    is  => $3,
-    required => $4,
-    default => $5,
-    handles => $6,
+    is  => ${2:$$(yas/choose-value'( "'ro'", "'rw'", "'bare'" ) ) },
+    isa => $3,
+    does => $4,
+    coerce => $5,
+    trigger => $6,
+    required => ${7:$$(yas/choose-value'( "0", "1" ) ) },
+    ${8:$$(yas/choose-value'( "lazy => ", "lazy_build => " ) ) } ${9:$$(yas/choose-value'( "0,", "1," ) ) }
+    weak_ref => $10,
+    auto_dref => $11,
+    lazy_build => $12,
+    documentation => $13,
+    default => $14,
+    handles => $15,
+    builder   => $16,
+    clearer   => $17,
+    predicate => $18,
+    reader => $19,
+    writer => $20,
 );
