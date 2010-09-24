@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: predicate => ...
+# --
+predicate => '${1:has_`(find-attribute-name)`}',

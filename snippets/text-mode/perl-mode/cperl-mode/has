@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: has
+# --
+has ${1:attribute} => (
+    is  => ${2:$$(yas/choose-value'( "'ro'", "'rw'", "'bare'" ) ) },
+    isa => $0,
+);

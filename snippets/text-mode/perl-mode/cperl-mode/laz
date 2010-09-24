@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: lazy
+# --
+lazy => 1,

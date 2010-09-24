@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: does => ...
+# --
+does => '$1',
+$0

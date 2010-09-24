@@ -1,0 +1,4 @@
+# -*- mode: snippet -*-
+# name: clearer
+# --
+clearer => '${1:clear_`(find-attribute-name)`}',
