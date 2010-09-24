@@ -1,4 +1,4 @@
-# name: class
+# name: MooseX::Declare
 # -*- mode: snippet -*-
 # --
 use MooseX::Declare;

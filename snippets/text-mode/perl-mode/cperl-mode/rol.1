@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: MooseX::Declare
+# --
+package ${1:`(perl-guess-package)`};
+
+use Moose::Role;
+
+${2:requires }$3;
+
+$0
