@@ -1,4 +1,8 @@
 ;;;move function somewhere else
+(defgroup perl-yasnippet nil
+  "Yet Another Snippet extension for perl stuff"
+  :group 'editing)
+
 (defun perl-guess-package (&optional file)
   ( let* ( (file (or file buffer-file-name) )
          ( file (replace-regexp-in-string ".*/\\(?:lib\\|t\\)/" "" file) )
@@ -14,3 +18,6 @@
              (data (replace-regexp-in-string " =>$" "" data) )
              )
            data ) ) )
+
+(provide 'perl-yasnippet)
+

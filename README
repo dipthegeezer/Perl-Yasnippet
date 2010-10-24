@@ -1,3 +1,7 @@
-Will expand soon.
+Download and install yasnippet
+copy snippets into the directory where
+snippets get loaded from.
+copy perl-yasnippet to /.emacs.d/plugins/yasnippet-xx
+then add (require 'perl-yasnippet) to your .emacs config
+file.
 
-Basically this will be a publically available repo for al the snippets for perl that I've worked on.
